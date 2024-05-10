@@ -1,0 +1,69 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--color-body);
+  color-scheme: light;
+}
+
+html.dark {
+  background: #222;
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: var(--font-size-lg);
+  color: var(--color-text);
+}
+
+#app {
+  height: 100vh;
+  // Dynamic Viewport Units
+  height: 100dvh;
+  position: relative;
+  overflow: hidden;
+}
+
+// NProgress Style
+#nprogress {
+  .bar {
+    background: #81d8d0 !important;
+  }
+
+  .spinner-icon {
+    border-top-color: #81d8d0;
+    border-left-color: #81d8d0;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+.slide-fadein-left-enter-active,
+.slide-fadein-left-leave-active,
+.slide-fadein-right-enter-active,
+.slide-fadein-right-leave-active {
+  transition:
+    opacity 0.3s,
+    transform 0.4s,
+    -webkit-transform 0.4s;
+}
+
+.slide-fadein-left-enter-from,
+.slide-fadein-right-leave-to {
+  transform: translateX(20px);
+  opacity: 0;
+}
+
+.slide-fadein-left-leave-to,
+.slide-fadein-right-enter-from {
+  transform: translateX(-20px);
+  opacity: 0;
+}
