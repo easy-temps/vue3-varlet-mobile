@@ -173,7 +173,7 @@ Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along
 
 We recommend that [issue](https://github.com/easy-temps/vue3-varlet-mobile/issues) be used for problem feedback, or Wechat group.
 
-<img style="width: 25%" src="https://cdn.jsdelivr.net/gh/CharleeWa/static/easy-temps.png" />
+<img style="width: 25%" src="https://cdn.jsdelivr.net/gh/CharleeWa/static/easy-temps.png" alt="community"  />
 
 ## Contributors
 
@@ -195,14 +195,3 @@ We recommend that [issue](https://github.com/easy-temps/vue3-varlet-mobile/issue
   </td>
 </tr>
 </table>
-
-## Star History
-
-<p align="left">
-  <a target="_blank" href="https://star-history.com/#easy-temps/vue3-varlet-mobile&Date">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=easy-temps/vue3-varlet-mobile&type=Date&theme=dark">
-      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=easy-temps/vue3-varlet-mobile&type=Date">
-    </picture>
-  </a>
-</p>

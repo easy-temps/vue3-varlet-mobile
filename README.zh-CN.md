@@ -173,7 +173,7 @@ pnpm build
 
 我们推荐使用 [议题](https://github.com/easy-temps/vue3-varlet-mobile/issues) 来反馈问题, 或者您也可以通过微信群联系我们。
 
-<img style="width: 25%" src="https://cdn.jsdelivr.net/gh/CharleeWa/static/easy-temps.png" />
+<img style="width: 25%" src="https://cdn.jsdelivr.net/gh/CharleeWa/static/easy-temps.png" alt="community" />
 
 ## 贡献者
 
@@ -195,14 +195,3 @@ pnpm build
   </td>
 </tr>
 </table>
-
-## 星星趋势
-
-<p align="left">
-  <a target="_blank" href="https://star-history.com/#easy-temps/vue3-varlet-mobile&Date">
-    <picture>
-      <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=easy-temps/vue3-varlet-mobile&type=Date&theme=dark">
-      <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=easy-temps/vue3-varlet-mobile&type=Date">
-    </picture>
-  </a>
-</p>
