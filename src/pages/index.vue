@@ -44,45 +44,41 @@ async function languagePicker() {
   })
 }
 
-const router = useRouter()
-const menuList = computed(() => ([
+const menus = computed(() => ([
   { title: t('home.mockGuide'), router: 'mock' },
   { title: t('home.echartsDemo'), router: 'charts' },
   { title: t('home.persistPiniaState'), router: 'counter' },
-  { title: t('home.404Demo'), router: 'unknown' },
   { title: t('home.unocssExample'), router: 'unocss' },
   { title: t('home.keepAlive'), router: 'keepalive' },
+  { title: t('home.404Demo'), router: 'unknown' },
 ]))
-
-function menuClick(item: any) {
-  if (item.router)
-    router.push(item.router)
-}
 </script>
 
 <template>
-  <Container :padding-x="0">
-    <var-paper :elevation="0" class="m-10 mt-20">
-      <var-cell ripple :border="true" :border-offset="0">
+  <Container>
+    <var-paper radius="10">
+      <var-cell border>
         {{ t('home.darkMode') }}
         <template #extra>
           <var-switch v-model="checked" @click="toggle" />
         </template>
       </var-cell>
 
-      <var-cell ripple :border="true" :border-offset="0" @click="languagePicker">
+      <var-cell border @click="languagePicker">
         {{ t('home.language') }}
         <template #extra>
-          <div class="w-150 flex items-center justify-right">
-            {{ language }}
+          <div class="w-80 flex items-center justify-right">
+            <span>{{ language }}</span>
             <var-icon name="chevron-right" />
           </div>
         </template>
       </var-cell>
 
       <var-cell
-        v-for="(item, index) in menuList" :key="item.title" ripple :border="index !== menuList.length - 1"
-        :border-offset="0" @click="menuClick(item)"
+        v-for="(item, index) in menus"
+        :key="item.router"
+        :border="index !== menus.length - 1"
+        @click="$router.push(item.router)"
       >
         {{ item.title }}
         <template #extra>
