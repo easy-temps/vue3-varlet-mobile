@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia'
-import { StyleProvider, Themes } from '@varlet/ui'
+import { darkTheme } from '@/styles/dark'
+import { lightTheme } from '@/styles/light'
 
 export interface AppStore {
   swithMode: (val: string) => void
@@ -17,9 +18,7 @@ const useAppStore = defineStore('app', () => {
   const mode = ref(theme)
 
   const swithMode = (val: string) => {
-    const rootStyleVars = val === 'light'
-      ? Themes.toViewport({ '--color-body': '#f7f8fa', '--result-title-font-size': '32px', '--result-description-font-size': '14px' })
-      : Themes.toViewport({ ...Themes.dark, '--result-title-font-size': '32px', '--result-description-font-size': '14px' })
+    const rootStyleVars = val === 'light' ? lightTheme : darkTheme
     StyleProvider(rootStyleVars)
 
     mode.value = val
