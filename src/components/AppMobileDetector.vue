@@ -7,7 +7,7 @@ const isMobile = ref(/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera M
 
   <div v-else class="min-h-screen flex flex-col items-center justify-center px-[14px]">
     <var-result
-      class="fz-24 max-w-[350px] bg-transparent"
+      class="max-w-[350px] bg-transparent"
       type="warning"
       :title="$t('app.warning')"
       :description="$t('app.pleaseUseMobileVisit')"
