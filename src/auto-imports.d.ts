@@ -6,9 +6,7 @@
 export {}
 declare global {
   const EffectScope: typeof import('vue')['EffectScope']
-  const LoadingBar: typeof import('@varlet/ui')['LoadingBar']
   const Picker: typeof import('@varlet/ui')['Picker']
-  const Snackbar: typeof import('@varlet/ui')['Snackbar']
   const StyleProvider: typeof import('@varlet/ui')['StyleProvider']
   const afterAll: typeof import('vitest')['afterAll']
   const afterEach: typeof import('vitest')['afterEach']
