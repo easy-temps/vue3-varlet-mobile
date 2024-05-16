@@ -5,8 +5,7 @@ export interface ResponseBody<T = any> {
   success: boolean
 }
 
-/** 统一返回结构体 */
-
+/** Unified return structure */
 export interface PageResult<T = any> {
   data: T[]
   current?: number

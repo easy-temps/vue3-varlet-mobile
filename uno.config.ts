@@ -9,7 +9,7 @@ import { presetVarlet } from '@varlet/preset-unocss'
 
 import presetRemToPx from '@unocss/preset-rem-to-px'
 
-// 刚使用unocss的朋友，可以借助这个工具： https://to-unocss.netlify.app
+// Friends who have just used unocss can use this tool: https://to-unocss.netlify.app
 
 export default defineConfig({
   presets: [
@@ -17,11 +17,11 @@ export default defineConfig({
     presetVarlet(),
     presetAttributify,
     presetIcons(),
-    // 为什么要用到这个插件？
-    // 模板使用 viewport 作为移动端适配方案，unocss 默认单位为 rem
-    // 所以需要转成 px，然后由 postcss 把 px 转成 vw/vh，完成适配
+    // Why use this plug-in?
+    // The template uses viewport as the mobile adaptation scheme, and the default unit of unocss is rem
+    // So it needs to be converted to px, and then postcss converts px to vw/vh to complete the adaptation.
     presetRemToPx({
-      // 这里为什么要设置基础字体大小？看下面这篇文章
+      // Why do you want to set the basic font size here? Read the following article.
       // https://juejin.cn/post/7262975395620618298
       baseFontSize: 4,
     }),
