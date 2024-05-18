@@ -7,7 +7,7 @@ import 'virtual:uno.css'
 import '@/styles/app.less'
 import { i18n } from '@/utils/i18n'
 
-// Varlet 桌面端适配
+// Varlet Desktop adaptation
 import '@varlet/touch-emulator'
 
 const app = createApp(App)

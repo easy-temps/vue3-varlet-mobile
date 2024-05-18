@@ -14,13 +14,13 @@ export function createViteVConsole() {
       theme: `document.documentElement.classList.contains('dark') ? 'dark' : 'light'`,
     },
     eventListener: `
-      const targetElement = document.querySelector('html'); // 择要监听的元素
+      const targetElement = document.querySelector('html'); // Choose the elements to be monitored
       const observerOptions = {
-        attributes: true, // 监听属性变化
-        attributeFilter: ['class'] // 只监听class属性变化
+        attributes: true, // Monitor attribute changes
+        attributeFilter: ['class'] // Only listen to changes in class attributes
       };
 
-      // 定义回调函数来处理观察到的变化
+      // Define a callback function to deal with observed changes
       function handleAttributeChange(mutationsList) {
         for(let mutation of mutationsList) {
           if (mutation.type === 'attributes' && mutation.attributeName === 'class') {
@@ -31,13 +31,13 @@ export function createViteVConsole() {
         }
       }
 
-      // 创建观察者实例并传入回调函数
+      // Create an observer instance and pass in the callback function
       const observer = new MutationObserver(handleAttributeChange);
 
-      // 开始观察目标元素
+      // Start observing the target element
       observer.observe(targetElement, observerOptions);
 
-      // 当不再需要观察时，停止观察
+      // Stop observing when you no longer need to observe.
       // observer.disconnect();
     `,
   })

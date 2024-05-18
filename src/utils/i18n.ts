@@ -14,13 +14,13 @@ export const i18n = createI18n({
   messages,
 })
 
-/** 多语言 picker columns */
+/** i18n picker columns */
 export const languageColumns: PickerColumnOption[] = [
   { text: '简体中文', value: 'zh-CN' },
   { text: 'English', value: 'en-US' },
 ]
 
-/** 当前语言 */
+/** Current language */
 export const locale = computed({
   get() {
     return (i18n.global.locale as unknown as Ref<string>).value
@@ -32,9 +32,9 @@ export const locale = computed({
   },
 })
 
-// 载入 varlet 语言包
+// Load the varlet language package
 Locale.add('zh-CN', Locale.zhCN)
 Locale.add('en-US', Locale.enUS)
 
-// 根据当前语言切换 varlet 语言包
+// Switch current language
 Locale.use(locale.value)

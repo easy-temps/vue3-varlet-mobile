@@ -3,17 +3,17 @@ import axios from 'axios'
 import { localStorage } from '@/utils/local-storage'
 import { STORAGE_TOKEN_KEY } from '@/stores/mutation-type'
 
-// 这里是用于设定请求后端时，所用的 Token KEY
-// 可以根据自己的需要修改，常见的如 Access-Token，Authorization
-// 需要注意的是，请尽量保证使用中横线`-` 来作为分隔符，
-// 避免被 nginx 等负载均衡器丢弃了自定义的请求头
+// This is the Token KEY used to set the request backend.
+// You can modify it according to your own needs, such as Access-Token，Authorization
+// It should be noted that please try to use the horizontal line `-` as the separator
+// Avoid discarding custom request headers by load balancers such as nginx
 export const REQUEST_TOKEN_KEY = 'Access-Token'
 
-// 创建 axios 实例
+// Create an axios instance
 const request = axios.create({
-  // API 请求的默认前缀
+  // API Default prefix for requests
   baseURL: import.meta.env.VITE_APP_API_BASE_URL,
-  timeout: 6000, // 请求超时时间
+  timeout: 6000, // Request timeout
 })
 
 export type RequestError = AxiosError<{
@@ -22,28 +22,28 @@ export type RequestError = AxiosError<{
   errorMessage?: string
 }>
 
-// 异常拦截处理器
+// Abnormal interception processor
 function errorHandler(error: RequestError): Promise<any> {
   if (error.response) {
     const { data = {}, status, statusText } = error.response
-    // 403 无权限
+    // 403 No permission
     if (status === 403)
       Snackbar({ type: 'warning', content: (data && data.message) || statusText })
 
-    // 401 未登录/未授权
+    // 401 Not logged in/Unauthorized
     if (status === 401 && data.result && data.result.isLogin)
       Snackbar({ type: 'warning', content: 'Authorization verification failed' })
-      // 如果你需要直接跳转登录页面
+      // If you need to jump directly to the login page
       // location.replace(loginRoutePath)
   }
   return Promise.reject(error)
 }
 
-// 请求拦截器
+// Request interceptor
 function requestHandler(config: InternalAxiosRequestConfig): InternalAxiosRequestConfig | Promise<InternalAxiosRequestConfig> {
   const savedToken = localStorage.get(STORAGE_TOKEN_KEY)
-  // 如果 token 存在
-  // 让每个请求携带自定义 token, 请根据实际情况修改
+  // If the token exists
+  // Let each request carry a custom token, please modify it according to the actual situation.
   if (savedToken)
     config.headers[REQUEST_TOKEN_KEY] = savedToken
 
@@ -53,7 +53,7 @@ function requestHandler(config: InternalAxiosRequestConfig): InternalAxiosReques
 // Add a request interceptor
 request.interceptors.request.use(requestHandler, errorHandler)
 
-// 响应拦截器
+// Response interceptor
 function responseHandler(response: { data: any }) {
   return response.data
 }
