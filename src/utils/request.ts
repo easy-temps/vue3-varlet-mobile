@@ -1,5 +1,6 @@
 import type { AxiosError, InternalAxiosRequestConfig } from 'axios'
 import axios from 'axios'
+import { Snackbar } from '@varlet/ui'
 import { localStorage } from '@/utils/local-storage'
 import { STORAGE_TOKEN_KEY } from '@/stores/mutation-type'
 
