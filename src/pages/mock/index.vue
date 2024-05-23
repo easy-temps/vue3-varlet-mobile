@@ -13,13 +13,11 @@ definePage({
 const messages = ref<string>('')
 
 function pull() {
-  queryProse().then((res) => {
-    messages.value = res.data.prose
+  queryProse().then(({ code, result }) => {
+    if (code === 0)
+      messages.value = result
   })
 }
-
-// reset data
-const reset = () => messages.value = ''
 </script>
 
 <template>
@@ -41,7 +39,7 @@ const reset = () => messages.value = ''
       <var-button type="primary" block @click="pull">
         {{ $t('mock.pull') }}
       </var-button>
-      <var-button type="default" block @click="reset">
+      <var-button type="default" block @click="messages = ''">
         {{ $t('mock.reset') }}
       </var-button>
     </var-space>
