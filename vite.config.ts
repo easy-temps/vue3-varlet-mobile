@@ -5,6 +5,7 @@ import type { ConfigEnv, UserConfig } from 'vite'
 import viewport from 'postcss-mobile-forever'
 import autoprefixer from 'autoprefixer'
 import { createVitePlugins } from './build/vite'
+import { exclude, include } from './build/vite/optimize'
 
 export default ({ mode }: ConfigEnv): UserConfig => {
   const root = process.cwd()
@@ -51,5 +52,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       cssCodeSplit: false,
       chunkSizeWarningLimit: 2048,
     },
+
+    optimizeDeps: { include, exclude },
   }
 }
