@@ -1,26 +1,30 @@
+<div align="center">
+
+<img src="https://cdn.jsdelivr.net/gh/easy-temps/easy-static/cover.png" alt="cover" />
+
 <h1 align="center">vue3-varlet-mobile</h1>
 
-<p align='center'>
-  <a href="https://vue3-varlet-mobile.netlify.app">在线 Demo</a>
-</p>
+[English](./README.md) / 简体中文
+
+An mobile web apps template based on the Vue 3 ecosystem.
+
+一个基于 Vue 3 生态系统的移动 web 应用模板，帮助你快速完成业务开发。
 
 <p align="center">
-  一个基于 Vue 3 生态系统的移动 web 应用模板
+<img src="https://img.shields.io/github/license/easy-temps/vue3-varlet-mobile" alt="license" />
+<img src="https://img.shields.io/github/package-json/v/easy-temps/vue3-varlet-mobile" alt="version" />
+<img src="https://img.shields.io/github/repo-size/easy-temps/vue3-varlet-mobile" alt="repo-size" />
+<img src="https://img.shields.io/github/languages/top/easy-temps/vue3-varlet-mobile" alt="languages" />
+<img src="https://img.shields.io/github/issues-closed/easy-temps/vue3-varlet-mobile" alt="issues" />
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/github/license/easy-temps/vue3-varlet-mobile" alt="license" />
-  <img src="https://img.shields.io/github/package-json/v/easy-temps/vue3-varlet-mobile" alt="version" />
-  <img src="https://img.shields.io/github/repo-size/easy-temps/vue3-varlet-mobile" alt="repo-size" />
-  <img src="https://img.shields.io/github/languages/top/easy-temps/vue3-varlet-mobile" alt="languages" />
-  <img src="https://img.shields.io/github/issues-closed/easy-temps/vue3-varlet-mobile" alt="issues" />
-</p>
+[文档](https://easy-temps.github.io/easy-docs/vue3-varlet-mobile/) / [反馈](https://github.com/easy-temps/vue3-varlet-mobile/issues)
 
-<br>
+<a href="https://vue3-varlet-mobile.netlify.app">在线 Demo</a>
 
-<p align='center'>
-<a href="https://github.com/easy-temps/vue3-varlet-mobile/blob/main/README.md">English</a> / <b>简体中文</b>
-</p>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fd5d0847-5f6f-4102-a2b2-3683c80697de/deploy-status)](https://app.netlify.com/sites/vue3-varlet-mobile/deploys)
+
+</div>
 
 <br>
 
@@ -52,13 +56,11 @@
 
 - 🌈 Git [hooks](./.husky) - 提交代码 eslint 检测 和 提交规范检测
 
-- 🪶 [varlet](https://github.com/varletjs/varlet) - 移动端 Vue 组件库
+- 🪶 [Varlet](https://github.com/varletjs/varlet) - 基于 Vue3 开发的 Material 风格移动端组件库
 
 - 🔭 [vConsole](https://github.com/vadxq/vite-plugin-vconsole) - 移动端网页开发工具
 
-- 📱 浏览器适配 - 使用 viewport vmin/vh 单位布局
-
-- 💻 [桌面端优化](https://github.com/wswmsword/postcss-mobile-forever) - 处理为移动端视图
+- 📱 [浏览器适配](https://github.com/wswmsword/postcss-mobile-forever) - 使用 viewport 视口单位
 
 - 🌓 支持深色模式
 
@@ -75,8 +77,9 @@
 - [UnoCSS](https://github.com/antfu/unocss) - 高性能且极具灵活性的即时原子化 CSS 引擎
   - [`@unocss/preset-rem-to-px`](https://github.com/unocss/unocss/tree/main/packages/preset-rem-to-px) - 将所有实用程序的 rem 转换为 px
   - [`eslint-plugin-unocss`](https://github.com/devunt/eslint-plugin-unocss) - Unocss 的 ESLint 插件
-- [varlet](https://github.com/varletjs/varlet) - 移动端 Vue 组件库
-  - [`varlet/touch-emulator`](https://github.com/varletjs/varlet/tree/dev/packages/varlet-touch-emulator) - 在桌面端上模拟移动端 touch 事件
+- [Varlet](https://github.com/varletjs/varlet) - 基于 Vue3 开发的 Material 风格移动端组件库
+  - [`@varlet/touch-emulator`](https://github.com/varletjs/varlet/tree/dev/packages/varlet-touch-emulator) - 在桌面端上模拟移动端 touch 事件
+  - [`@varlet/preset-unocss`](https://github.com/varletjs/varlet/tree/dev/packages/varlet-preset-unocss) - 原子化 CSS 支持
 
 ### 插件
 
@@ -113,6 +116,7 @@
   - [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - Vue 3 `<script setup>` IDE 支持
   - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - 图标内联显示和自动补全
   - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - 多合一的 I18n 支持
+  - [Varlet](https://varlet.pages.dev/#/zh-CN/extension) - 支持全组件的语法提示、快速补全
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ## 现在可以试试
@@ -175,23 +179,34 @@ pnpm build
 
 <img style="width: 25%" src="https://cdn.jsdelivr.net/gh/CharleeWa/static/easy-temps.png" alt="community" />
 
-## 贡献者
+## 捐赠 ☕
 
-<table>
-<tr>
-  <td align="center">
-    <a href="https://github.com/ljt990218">
-      <img src="https://avatars.githubusercontent.com/u/50509815?v=4" width="90;" alt="ljt990218"/>
-      <br />
-      <sub><b>ljt990218</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/CharleeWa">
-      <img src="https://avatars.githubusercontent.com/u/22477554?s=96&v=4" width="90;" alt="CharleeWa"/>
-      <br />
-      <sub><b>Charlie Wang</b></sub>
-    </a>
-  </td>
-</tr>
-</table>
+[请我喝一杯咖啡](https://github.com/CharleeWa/sponsor)
+
+<h2 align="center">💝 我们的赞助者 💝</h2>
+
+<p align="center">
+您的赞助将帮助我们继续迭代这个令人兴奋的项目! 🚀
+</p>
+
+<p align="center">
+<a href="https://github.com/keyFeng"><img src="https://avatars.githubusercontent.com/u/52267976?v=4" width="60px" alt="keyFeng" /></a>
+<a href="https://github.com/ljt990218"><img src="https://avatars.githubusercontent.com/u/50509815?v=4" width="60px" alt="ljt990218" /></a>
+</p>
+
+<h2 align="center">
+💪 贡献者 💪
+</h2>
+
+<p align="center">
+我们的贡献者使这个项目变得更好。谢谢你！ 🙏
+</p>
+
+<p align="center">
+<a href="https://github.com/CharleeWa"><img src="https://avatars.githubusercontent.com/u/22477554?v=4" width="60px" alt="CharleeWa" /></a>
+<a href="https://github.com/ljt990218"><img src="https://avatars.githubusercontent.com/u/50509815?v=4" width="60px" alt="ljt990218" /></a>
+</p>
+
+## License
+
+[MIT](./LICENSE) License

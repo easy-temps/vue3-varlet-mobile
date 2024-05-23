@@ -1,26 +1,30 @@
+<div align="center">
+
+<img src="https://cdn.jsdelivr.net/gh/easy-temps/easy-static/cover.png" alt="cover" />
+
 <h1 align="center">vue3-varlet-mobile</h1>
 
-<p align='center'>
-  <a href="https://vue3-varlet-mobile.netlify.app">Live Demo</a>
-</p>
+English / [简体中文](./README.zh-CN.md)
+
+An mobile web apps template based on the Vue 3 ecosystem.
+
+一个基于 Vue 3 生态系统的移动 web 应用模板，帮助你快速完成业务开发。
 
 <p align="center">
-  An mobile web apps template based on the Vue 3 ecosystem
+<img src="https://img.shields.io/github/license/easy-temps/vue3-varlet-mobile" alt="license" />
+<img src="https://img.shields.io/github/package-json/v/easy-temps/vue3-varlet-mobile" alt="version" />
+<img src="https://img.shields.io/github/repo-size/easy-temps/vue3-varlet-mobile" alt="repo-size" />
+<img src="https://img.shields.io/github/languages/top/easy-temps/vue3-varlet-mobile" alt="languages" />
+<img src="https://img.shields.io/github/issues-closed/easy-temps/vue3-varlet-mobile" alt="issues" />
 </p>
 
-<p align="center">
-  <img src="https://img.shields.io/github/license/easy-temps/vue3-varlet-mobile" alt="license" />
-  <img src="https://img.shields.io/github/package-json/v/easy-temps/vue3-varlet-mobile" alt="version" />
-  <img src="https://img.shields.io/github/repo-size/easy-temps/vue3-varlet-mobile" alt="repo-size" />
-  <img src="https://img.shields.io/github/languages/top/easy-temps/vue3-varlet-mobile" alt="languages" />
-  <img src="https://img.shields.io/github/issues-closed/easy-temps/vue3-varlet-mobile" alt="issues" />
-</p>
+[文档](https://easy-temps.github.io/easy-docs/vue3-varlet-mobile/) / [反馈](https://github.com/easy-temps/vue3-varlet-mobile/issues)
 
-<br>
+<a href="https://vue3-varlet-mobile.netlify.app">Live Demo</a>
 
-<p align='center'>
-<b>English</b> / <a href="https://github.com/easy-temps/vue3-varlet-mobile/blob/main/README.zh-CN.md">简体中文</a>
-</p>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fd5d0847-5f6f-4102-a2b2-3683c80697de/deploy-status)](https://app.netlify.com/sites/vue3-varlet-mobile/deploys)
+
+</div>
 
 <br>
 
@@ -52,13 +56,11 @@
 
 - 🌈 Git [hooks](./.husky) - lint and commit
 
-- 🪶 [varlet](https://github.com/varletjs/varlet) - Vue UI library for mobile web apps
+- 🪶 [Varlet](https://github.com/varletjs/varlet) - Material design mobile component library developed based on Vue3
 
 - 🔭 [vConsole](https://github.com/vadxq/vite-plugin-vconsole) - the developer tool for mobile web page
 
-- 📱 Browser adaptation - use viewport vmin/vh units
-
-- 💻 [Desktop optimization](https://github.com/wswmsword/postcss-mobile-forever) - the mobile area
+- 📱 [Browser Adaptation](https://github.com/wswmsword/postcss-mobile-forever) - use viewport vw/vh units
 
 - 🌓 Dark Mode Support
 
@@ -75,8 +77,9 @@
 - [UnoCSS](https://github.com/antfu/unocss) - The instant on-demand atomic CSS engine
   - [`@unocss/preset-rem-to-px`](https://github.com/unocss/unocss/tree/main/packages/preset-rem-to-px) - Converts rem to px for all utilities
   - [`eslint-plugin-unocss`](https://github.com/devunt/eslint-plugin-unocss) - ESLint plugin for UnoCSS
-- [varlet](https://github.com/varletjs/varlet) - Vue UI library for mobile web apps
-  - [`varlet/touch-emulator`](https://github.com/varletjs/varlet/tree/dev/packages/varlet-touch-emulator) - Simulate mobile touch events on the desktop
+- [Varlet](https://github.com/varletjs/varlet) - Material design mobile component library developed based on Vue3
+  - [`@varlet/touch-emulator`](https://github.com/varletjs/varlet/tree/dev/packages/varlet-touch-emulator) - Simulate mobile touch events on the desktop
+  - [`@varlet/preset-unocss`](https://github.com/varletjs/varlet/tree/dev/packages/varlet-preset-unocss) - CSS atomic framework presets
 
 ### Plugins
 
@@ -113,6 +116,7 @@
   - [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) - Vue 3 `<script setup>` IDE support
   - [Iconify IntelliSense](https://marketplace.visualstudio.com/items?itemName=antfu.iconify) - Icon inline display and autocomplete
   - [i18n Ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally) - All in one i18n support
+  - [Varlet](https://varlet.pages.dev/#/zh-CN/extension) - Support syntax hints and quick completion for all components
   - [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
 
 ## Try it now
@@ -175,23 +179,34 @@ We recommend that [issue](https://github.com/easy-temps/vue3-varlet-mobile/issue
 
 <img style="width: 25%" src="https://cdn.jsdelivr.net/gh/CharleeWa/static/easy-temps.png" alt="community"  />
 
-## Contributors
+## Donation ☕
 
-<table>
-<tr>
-  <td align="center">
-    <a href="https://github.com/ljt990218">
-      <img src="https://avatars.githubusercontent.com/u/50509815?v=4" width="90;" alt="ljt990218"/>
-      <br />
-      <sub><b>ljt990218</b></sub>
-    </a>
-  </td>
-  <td align="center">
-    <a href="https://github.com/CharleeWa">
-      <img src="https://avatars.githubusercontent.com/u/22477554?s=96&v=4" width="90;" alt="CharleeWa"/>
-      <br />
-      <sub><b>Charlie Wang</b></sub>
-    </a>
-  </td>
-</tr>
-</table>
+[Buy Me a Coffee](https://github.com/CharleeWa/sponsor)
+
+<h2 align="center">💝 Our Sponsors 💝</h2>
+
+<p align="center">
+Your sponsorship will help us continue to iterate on this exciting project! 🚀
+</p>
+
+<p align="center">
+<a href="https://github.com/keyFeng"><img src="https://avatars.githubusercontent.com/u/52267976?v=4" width="60px" alt="keyFeng" /></a>
+<a href="https://github.com/ljt990218"><img src="https://avatars.githubusercontent.com/u/50509815?v=4" width="60px" alt="ljt990218" /></a>
+</p>
+
+<h2 align="center">
+💪 Contributors 💪
+</h2>
+
+<p align="center">
+Our contributors have made this project better. Thank you! 🙏
+</p>
+
+<p align="center">
+<a href="https://github.com/CharleeWa"><img src="https://avatars.githubusercontent.com/u/22477554?v=4" width="60px" alt="CharleeWa" /></a>
+<a href="https://github.com/ljt990218"><img src="https://avatars.githubusercontent.com/u/50509815?v=4" width="60px" alt="ljt990218" /></a>
+</p>
+
+## License
+
+[MIT](./LICENSE) License
