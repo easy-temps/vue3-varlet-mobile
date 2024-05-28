@@ -12,14 +12,12 @@ function onBack() {
 <template>
   <Container>
     <div text="center gray-300 dark:gray-200 18">
-      <var-icon name="warning" size="3em" />
-      <div> Not found </div>
+      <var-icon name="warning" size="5em" />
+      <div> {{ $t('app.notFound') }} </div>
 
-      <div class="mt-10">
-        <button btn m="3 t8" class="px-10 py-6 font-bold" @click="onBack">
-          Back
-        </button>
-      </div>
+      <var-button type="primary" class="mt-10" @click="onBack">
+        {{ $t('app.backBtn') }}
+      </var-button>
     </div>
   </Container>
 </template>

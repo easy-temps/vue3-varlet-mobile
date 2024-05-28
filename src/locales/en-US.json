@@ -1,7 +1,9 @@
 {
   "app": {
     "pleaseUseMobileVisit": "Please use a mobile device to access",
-    "warning": "WARNING"
+    "warning": "WARNING",
+    "notFound": "Not found",
+    "backBtn": "Back"
   },
   "home": {
     "darkMode": "🌗 Dark Mode",

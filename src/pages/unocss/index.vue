@@ -15,12 +15,8 @@ definePage({
       Hello, Unocss!
     </h1>
 
-    <p class="mt-4 text-gray-700 dark:text-white">
-      This is a simple example of Unocss in action.
+    <p class="mt-4 text-[var(--color-primary)] dark:text-white">
+      This is a simple example of Unocss.
     </p>
-
-    <button class="px-10 py-6 font-bold btn">
-      Button
-    </button>
   </Container>
 </template>

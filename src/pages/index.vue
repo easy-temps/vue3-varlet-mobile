@@ -56,7 +56,7 @@ const menus = computed(() => ([
 
 <template>
   <Container>
-    <var-paper radius="10">
+    <var-paper radius="10" :elevation="2">
       <var-cell border>
         {{ t('home.darkMode') }}
         <template #extra>
@@ -64,7 +64,7 @@ const menus = computed(() => ([
         </template>
       </var-cell>
 
-      <var-cell border @click="languagePicker">
+      <var-cell ripple border @click="languagePicker">
         {{ t('home.language') }}
         <template #extra>
           <div class="w-80 flex items-center justify-right">
@@ -78,6 +78,7 @@ const menus = computed(() => ([
         v-for="(item, index) in menus"
         :key="item.router"
         :border="index !== menus.length - 1"
+        ripple
         @click="$router.push(item.router)"
       >
         {{ item.title }}

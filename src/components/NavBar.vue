@@ -20,10 +20,10 @@ const title = computed(() => {
 </script>
 
 <template>
-  <var-app-bar v-show="title" :title="title" :fixed="true" :safe-area-top="true" @click-left="onBack">
+  <var-app-bar v-show="title" :title="title" :fixed="true" :safe-area-top="true">
     <template #left>
       <var-button color="transparent" text-color="#fff" round text @click="onBack">
-        <var-icon name="chevron-left" />
+        <var-icon name="chevron-left" :size="24" />
       </var-button>
     </template>
   </var-app-bar>

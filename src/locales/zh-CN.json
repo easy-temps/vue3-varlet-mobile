@@ -1,7 +1,9 @@
 {
   "app": {
     "warning": "警告",
-    "pleaseUseMobileVisit": "请使用移动设备访问"
+    "pleaseUseMobileVisit": "请使用移动设备访问",
+    "notFound": "没有找到",
+    "backBtn": "返回"
   },
   "home": {
     "darkMode": "🌗 暗黑模式",
