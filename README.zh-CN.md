@@ -80,6 +80,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 - [Varlet](https://github.com/varletjs/varlet) - 基于 Vue3 开发的 Material 风格移动端组件库
   - [`@varlet/touch-emulator`](https://github.com/varletjs/varlet/tree/dev/packages/varlet-touch-emulator) - 在桌面端上模拟移动端 touch 事件
   - [`@varlet/preset-unocss`](https://github.com/varletjs/varlet/tree/dev/packages/varlet-preset-unocss) - 原子化 CSS 支持
+  - [`@varlet/unplugin-icon-builder`](https://github.com/varletjs/varlet-iconx) - 为 Varlet 提供图标解决方案的工具集合
 
 ### 插件
 

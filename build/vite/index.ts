@@ -14,6 +14,7 @@ import Sitemap from 'vite-plugin-sitemap'
 import VueDevTools from 'vite-plugin-vue-devtools'
 import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import { VarletImportResolver } from '@varlet/import-resolver'
+import icon from '@varlet/unplugin-icon-builder/vite'
 import { createViteVConsole } from './vconsole'
 
 export function createVitePlugins() {
@@ -76,6 +77,9 @@ export function createVitePlugins() {
     legacy({
       targets: ['defaults', 'not IE 11'],
     }),
+
+    // https://varlet.pages.dev/#/zh-CN/icon
+    icon({ dir: 'src/assets/icons', onDemand: true }),
 
     // https://github.com/antfu/unocss
     // see uno.config.ts for config

@@ -80,6 +80,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 - [Varlet](https://github.com/varletjs/varlet) - Material design mobile component library developed based on Vue3
   - [`@varlet/touch-emulator`](https://github.com/varletjs/varlet/tree/dev/packages/varlet-touch-emulator) - Simulate mobile touch events on the desktop
   - [`@varlet/preset-unocss`](https://github.com/varletjs/varlet/tree/dev/packages/varlet-preset-unocss) - CSS atomic framework presets
+  - [`@varlet/unplugin-icon-builder`](https://github.com/varletjs/varlet-iconx) - A collection of tools that provide icon solutions for varlet
 
 ### Plugins
 

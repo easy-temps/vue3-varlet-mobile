@@ -50,6 +50,7 @@ const menus = computed(() => ([
   { title: t('home.persistPiniaState'), router: 'counter' },
   { title: t('home.unocssExample'), router: 'unocss' },
   { title: t('home.keepAlive'), router: 'keepalive' },
+  { title: t('home.iconx'), router: 'iconx' },
   { title: t('home.404Demo'), router: 'unknown' },
 ]))
 </script>

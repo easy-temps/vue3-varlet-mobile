@@ -1,5 +1,7 @@
 /// <reference types="vite/client" />
 
+declare module 'virtual-icons' {}
+
 declare module '*.vue' {
   import type { DefineComponent } from 'vue'
 
