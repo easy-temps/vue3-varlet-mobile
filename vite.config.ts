@@ -43,6 +43,8 @@ export default ({ mode }: ConfigEnv): UserConfig => {
           viewport({
             unitPrecision: 6,
             viewportWidth: 375,
+            mobileUnit: 'vmin',
+            exclude: /vue-devtools/,
           }),
         ],
       },
