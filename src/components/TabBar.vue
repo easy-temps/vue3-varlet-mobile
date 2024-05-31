@@ -20,11 +20,10 @@ function change(e: string) {
 </script>
 
 <template>
-  <var-bottom-navigation
-    v-show="display" v-model:active="active" :fixed="true" :safe-area="true"
-    @change="change(active)"
-  >
-    <var-bottom-navigation-item name="/" :label="t('layouts.home')" icon="home" />
-    <var-bottom-navigation-item name="profile" :label="t('layouts.profile')" icon="account-circle" />
-  </var-bottom-navigation>
+  <div v-show="display">
+    <var-bottom-navigation v-model:active="active" :fixed="true" :safe-area="true" @change="change(active)">
+      <var-bottom-navigation-item name="/" :label="t('layouts.home')" icon="home" />
+      <var-bottom-navigation-item name="profile" :label="t('layouts.profile')" icon="account-circle" />
+    </var-bottom-navigation>
+  </div>
 </template>
