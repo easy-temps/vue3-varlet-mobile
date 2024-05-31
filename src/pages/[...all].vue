@@ -1,4 +1,10 @@
 <script setup lang="ts">
+definePage({
+  meta: {
+    level: 2,
+  },
+})
+
 const router = useRouter()
 
 function onBack() {
