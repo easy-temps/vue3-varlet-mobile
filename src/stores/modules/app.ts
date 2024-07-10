@@ -3,7 +3,7 @@ import { darkTheme } from '@/styles/dark'
 import { lightTheme } from '@/styles/light'
 
 export interface AppStore {
-  swithMode: (val: string) => void
+  switchMode: (val: string) => void
   setTabBarActive: (val: string) => void
 }
 
@@ -17,7 +17,7 @@ const useAppStore = defineStore('app', () => {
   const theme = prefersDark ? 'dark' : 'light'
   const mode = ref(theme)
 
-  const swithMode = (val: string) => {
+  const switchMode = (val: string) => {
     const rootStyleVars = val === 'light' ? lightTheme : darkTheme
     StyleProvider(rootStyleVars)
 
@@ -32,7 +32,7 @@ const useAppStore = defineStore('app', () => {
 
   return {
     mode,
-    swithMode,
+    switchMode,
     tabBarActive,
     setTabBarActive,
   }
