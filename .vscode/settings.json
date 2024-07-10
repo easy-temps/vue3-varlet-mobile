@@ -1,6 +1,6 @@
 {
-  // Enable the ESlint flat config support
-  "eslint.experimental.useFlatConfig": true,
+  // For VS Code ESLint works
+  "eslint.runtime": "node",
 
   // Disable the default formatter, use eslint instead
   "prettier.enable": false,
@@ -12,7 +12,7 @@
     "source.organizeImports": "never"
   },
 
-  // Disable the MD033 rule
+  // Markdownlint rules
   "markdownlint.config": {
     "default": true,
     "MD033": false,
@@ -43,7 +43,17 @@
     "markdown",
     "json",
     "jsonc",
-    "yaml"
+    "yaml",
+    "toml",
+    "xml",
+    "gql",
+    "graphql",
+    "astro",
+    "css",
+    "less",
+    "scss",
+    "pcss",
+    "postcss"
   ],
 
   // Specify the UI library you need to prompt
