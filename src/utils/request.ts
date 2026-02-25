@@ -1,6 +1,7 @@
 import type { AxiosError, InternalAxiosRequestConfig } from 'axios'
 import { STORAGE_TOKEN_KEY } from '@/stores/mutation-type'
 import { Snackbar } from '@varlet/ui'
+import '@varlet/ui/es/snackbar/style/index'
 import axios from 'axios'
 
 // This is the Token KEY used to set the request backend.

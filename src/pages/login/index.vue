@@ -94,7 +94,7 @@ const emailSuggestions = computed(() =>
       </var-space>
     </var-form>
 
-    <var-button size="small" type="primary" text block>
+    <var-button size="small" type="primary" text block @click="router.push('/register')">
       {{ $t('login.sign-up') }}
     </var-button>
 
