@@ -19,9 +19,10 @@
     "keepAlive": "🧡 KeepAlive 演示",
     "iconx": "🎉 Iconx 示例",
     "profile": "👤 个人中心",
-    "settings": "设置",
-    "login": "🔒 用户登录",
-    "register": "用户注册"
+    "settings": "⚙️ 设置",
+    "login": "🧑‍💻 用户登录",
+    "register": "🧑‍💻 用户注册",
+    "forgotPassword": "❓忘记密码"
   },
   "mock": {
     "fromAsyncData": "来自异步请求的数据",
@@ -82,5 +83,22 @@
     "gettingCode": "获取中",
     "sendCodeSuccess": "已发送，验证码为",
     "registerSuccess": "注册成功"
+  },
+  "forgotPassword": {
+    "email": "邮箱",
+    "code": "验证码",
+    "password": "新密码",
+    "confirmPassword": "再次输入新密码",
+    "pleaseEnterEmail": "请输入邮箱",
+    "pleaseEnterCode": "请输入验证码",
+    "pleaseEnterPassword": "请输入新密码",
+    "pleaseEnterConfirmPassword": "请再次输入新密码",
+    "passwordsDoNotMatch": "两次输入的密码不一致",
+    "confirm": "确认重置",
+    "backToLogin": "返回登录",
+    "getCode": "获取验证码",
+    "gettingCode": "获取中",
+    "sendCodeSuccess": "已发送，验证码为",
+    "passwordResetSuccess": "密码重置成功"
   }
 }

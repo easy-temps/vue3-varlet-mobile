@@ -19,9 +19,10 @@
     "keepAlive": "🧡 KeepAlive Demo",
     "iconx": "🎉 Iconx example",
     "profile": "👤 Profile",
-    "settings": "Settings",
-    "login": "🔒 Login",
-    "register": "Register"
+    "settings": "⚙️ Settings",
+    "login": "🧑‍💻 Login",
+    "register": "🧑‍💻 Register",
+    "forgotPassword": "❓Forgot Password"
   },
   "mock": {
     "fromAsyncData": "Data from asynchronous requests",
@@ -82,5 +83,22 @@
     "gettingCode": "Getting code",
     "sendCodeSuccess": "Sent, the code is",
     "registerSuccess": "Register succeeded"
+  },
+  "forgotPassword": {
+    "email": "Email",
+    "code": "Code",
+    "password": "New password",
+    "confirmPassword": "Enter new password again",
+    "pleaseEnterEmail": "Please enter email",
+    "pleaseEnterCode": "Please enter code",
+    "pleaseEnterPassword": "Please enter new password",
+    "pleaseEnterConfirmPassword": "Please enter new password again",
+    "passwordsDoNotMatch": "Passwords do not match",
+    "confirm": "Reset password",
+    "backToLogin": "Back to login",
+    "getCode": "Get code",
+    "gettingCode": "Getting code",
+    "sendCodeSuccess": "Sent, the code is",
+    "passwordResetSuccess": "Password reset succeeded"
   }
 }

@@ -98,7 +98,7 @@ const emailSuggestions = computed(() =>
       {{ $t('login.sign-up') }}
     </var-button>
 
-    <var-button size="small" type="primary" text block>
+    <var-button size="small" type="primary" text block @click="router.push('/forgot-password')">
       {{ $t('login.forgot-password') }}
     </var-button>
   </var-space>
